@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
-import MainPage from "./MainPage"
+import MainPage from "./MainPage/MainPage"
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
 } from "react-router-dom";
-import About from "./About";
-import Portfolio from "./Portfolio";
-import Blog from "./Blog";
-import Contacts from "./Contacts";
+import About from "./About/About";
+import Portfolio from "./Portfolio/Portfolio";
+import Blog from "./Blog/Blog";
+import Contacts from "./Contacts/Contacts";
+
+import "./App.scss"
 
 class App extends Component {
     constructor(props) {
@@ -17,11 +19,11 @@ class App extends Component {
     }
     render() {
         return(
-            <>
+            <div className="container">
                 <Router>
-                <nav>
+                <nav className='main-nav'>
                     <ul>
-                        <li><Link to="/home">Главная</Link></li>
+                        <li><Link exact to="/">Главная</Link></li>
                         <li><Link to="/portfolio">Работы</Link></li>
                         <li><Link to="/blog">Блог</Link></li>
                         <li><Link to="/about">Обо мне</Link></li>
@@ -29,7 +31,7 @@ class App extends Component {
                     </ul>
                 </nav>
                     <Switch>
-                        <Route path="/home">
+                        <Route exact path="/">
                             <MainPage />
                         </Route>
                         <Route path="/portfolio">
@@ -46,7 +48,7 @@ class App extends Component {
                         </Route>
                     </Switch>
             </Router>
-            </>
+            </div>
         )
     }
 

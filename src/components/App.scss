@@ -1,0 +1,61 @@
+$butHover : rgb(21, 101, 192);
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  margin-bottom: 20px;
+  ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    li:nth-of-type(1) a:hover{
+      background-color: rgb(75, 0, 130);
+    }
+    li:nth-of-type(2) a:hover{
+      background-color: rgb(21, 101, 192);
+    }
+    li:nth-of-type(3) a:hover{
+      background-color: rgb(48, 135, 50);
+    }
+    li:nth-of-type(4) a:hover{
+      background-color: rgb(245, 124, 0);
+    }
+    li:nth-of-type(5) a:hover{
+      background-color: rgb(255, 202, 40);
+    }
+
+
+    li {
+      flex-basis: 20%;
+      text-decoration: none;
+      display: flex;
+      margin-right: 2px;
+
+      a{
+        transition: 0.6s;
+        text-decoration: none;
+        flex-basis: 100%;
+        text-align: center;
+        padding: 20px;
+        display: block;
+        font: inherit;
+        outline: 1px solid black;
+        color: white;
+        font-size: 24px;
+      }:hover{
+        transition: 0.6s linear;
+        outline: 2px solid #fff;
+             }
+      :active{
+        outline: none;
+        background-color: rgb(255, 202, 40);
+      }
+
+      }
+    }
+}
