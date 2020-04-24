@@ -15,9 +15,9 @@ class MainPage extends Component {
             "    minDist = 150,\n" +
             "    maxDist = 300,\n" +
             "    initialWidth = 3,\n" +
-            "    maxLines = 100,\n" +
+            "    maxLines = 50,\n" +
             "    initialLines = 4,\n" +
-            "    speed = 0. ,\n" +
+            "    speed = 1 ,\n" +
             "\n" +
             "    lines = [],\n" +
             "    frame = 0,\n" +
