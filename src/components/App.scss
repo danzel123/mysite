@@ -1,7 +1,15 @@
 $butHover : rgb(21, 101, 192);
 
+canvas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
 .container{
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -13,21 +21,7 @@ $butHover : rgb(21, 101, 192);
     justify-content: space-between;
     list-style: none;
     margin: 0;
-    li:nth-of-type(1) a:hover{
-      background-color: rgb(75, 0, 130);
-    }
-    li:nth-of-type(2) a:hover{
-      background-color: rgb(21, 101, 192);
-    }
-    li:nth-of-type(3) a:hover{
-      background-color: rgb(48, 135, 50);
-    }
-    li:nth-of-type(4) a:hover{
-      background-color: rgb(245, 124, 0);
-    }
-    li:nth-of-type(5) a:hover{
-      background-color: rgb(255, 202, 40);
-    }
+
 
 
     li {
@@ -48,12 +42,14 @@ $butHover : rgb(21, 101, 192);
         color: white;
         font-size: 24px;
       }:hover{
-        transition: 0.6s linear;
-        outline: 2px solid #fff;
+        transition: 0.5s linear;
+      background-color: rgba(255, 255, 255, 0.1);
+        outline: 1px solid #fff;
              }
       :active{
-        outline: none;
-        background-color: rgb(255, 202, 40);
+        transition: none;
+        outline: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.2);
       }
 
       }

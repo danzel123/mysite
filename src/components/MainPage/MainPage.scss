@@ -5,6 +5,8 @@
   height: 65vh;
 }
 .main-information{
+  border-radius: 40%;
+  background-color:rgba(25, 25, 25, 0.95);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -12,13 +14,15 @@
 
   h2{
     font-size: 3.8rem;
-    width: 90%;
+    background-color:rgba(25, 25, 25, 0.95);
+    width: 65%;
     text-align: center;
     margin: 10px 0;
     line-height: 1.5em;
     font-weight: 300;
   }
   p{
-    font-weight: 300  ;
+    font-weight: 300;
+    margin: 0;
   }
 }
