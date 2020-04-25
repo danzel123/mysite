@@ -5,14 +5,14 @@ import Menu from "./Menu";
 class App extends Component {
 
 
-    render() {
-        return(
-            <div className="container"  >
-                <Menu/>
+  render() {
+    return (
+        <div className="container">
+          <Menu/>
 
-            </div>
-        )
-    }
+        </div>
+    )
+  }
 
 }
 

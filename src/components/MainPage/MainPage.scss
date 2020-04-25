@@ -1,28 +1,45 @@
-.main-page{
+.main-page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 65vh;
 }
-.main-information{
+
+.main-information {
   border-radius: 40%;
-  background-color:rgba(25, 25, 25, 0.95);
+  background-color: rgba(25, 25, 25, 0.95);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h2{
+  h2 {
     font-size: 3.8rem;
-    background-color:rgba(25, 25, 25, 0.95);
+    background-color: rgba(25, 25, 25, 0.95);
     width: 65%;
     text-align: center;
     margin: 10px 0;
     line-height: 1.5em;
     font-weight: 300;
   }
-  p{
+
+  p {
     font-weight: 300;
     margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-information {
+    border-radius: 40%;
+    background-color: rgba(25, 25, 25, 0.95);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 2rem;
+    }
   }
 }

@@ -10,7 +10,7 @@ class MainPage extends Component {
     render() {
         return(
             <div>
-                Блог
+                <h2 style={{'fontSize': '2rem', 'textAlign': 'center'}}>В разработке:)</h2>
             </div>
         )
     }

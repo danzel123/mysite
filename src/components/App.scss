@@ -1,5 +1,7 @@
-$butHover : rgb(21, 101, 192);
-
+$butHover: rgb(21, 101, 192);
+.container{
+  padding: 20px;
+}
 canvas {
   position: absolute;
   z-index: -1;
@@ -8,20 +10,24 @@ canvas {
   background-color: black;
 }
 
-.container{
+.container {
   max-width: 960px;
   margin: 0 auto;
 }
 
+.full-menu{
+  display: flex;
+}
+
 .main-nav {
   margin-bottom: 20px;
+
   ul {
-    display: flex;
+
     padding: 0;
     justify-content: space-between;
     list-style: none;
     margin: 0;
-
 
 
     li {
@@ -30,7 +36,7 @@ canvas {
       display: flex;
       margin-right: 2px;
 
-      a{
+      a {
         transition: 0.6s;
         text-decoration: none;
         flex-basis: 100%;
@@ -38,20 +44,107 @@ canvas {
         padding: 20px;
         display: block;
         font: inherit;
-        outline: 1px solid black;
+        outline: 1px solid #191919;
         color: white;
-        font-size: 24px;
-      }:hover{
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      :hover {
         transition: 0.5s linear;
-      background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);
         outline: 1px solid #fff;
-             }
-      :active{
+      }
+
+      :active {
         transition: none;
         outline: 1px solid #fff;
         background-color: rgba(255, 255, 255, 0.2);
       }
 
-      }
     }
+  }
+}
+
+
+
+/* скрываем чекбокс */
+#menu-toggle {
+  opacity: 0;
+}
+
+.mobile-menu-box{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-nav {
+    margin-bottom: 50px;
+  }
+  .main-nav .full-menu{
+    display: none;
+  }
+  .mobile-menu-box{
+    display: flex;
+  }
+
+
+  /* стилизуем кнопку */
+  .menu-btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center; /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 51;
+  }
+  /* добавляем "гамбургер" */
+  .menu-btn > span,
+  .menu-btn > span::before,
+  .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu-btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu-btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  /* контейнер меню */
+  .mobile-menu {
+    z-index: 50;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #242323;
+  }
+  #menu-toggle:checked ~ .menu-btn > span {
+    transform: rotate(45deg);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu-toggle:checked ~ .mobile-menu {
+    visibility: visible;
+    left: 0;
+  }
 }

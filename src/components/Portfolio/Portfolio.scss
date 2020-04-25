@@ -1,0 +1,151 @@
+$htmlCss: 80%;
+$JavaScript: 80%;
+$React: 60%;
+$Redux: 60%;
+$SQL: 50%;
+$GIT: 10%;
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+}
+
+.wrapper > div{
+  border: 3px solid #ffffff;
+  padding: 10px;
+
+}
+.wrapper h2{
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.skils-box{
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      padding: 5px;
+      position: relative;
+      background-color: #242323;
+      border: 1px solid #242323;
+      border-radius: 0 10px 10px 0;
+      margin: 0.5em 0;
+      p{
+        font-size: 0.9em;
+        display: inline-block;
+        padding: 3px;
+        text-shadow: #242323 0 0 2px;
+      }
+      .value{
+        margin: 0;
+        position: absolute;
+        right: 19px;
+        top: 4px;
+        font-size: 0.9em;
+
+      }
+      .row{
+        position: absolute;
+        z-index: 0;
+        height: 100%;
+        top: -1px;
+        left: -1px;
+        border: 1px solid #242323;
+        border-radius: 0 10px 10px 0;
+        transition: width 1s linear 0s;
+      }
+      .tool{
+        position: relative;
+        z-index: 2;
+    }
+    }
+  }
+}
+
+.html-css{
+  animation: html-css linear 1s;
+  animation-delay:1ms;
+
+}
+
+.js{
+  animation: js linear 1s;
+  animation-delay:1ms;
+
+}
+
+.react{
+  animation: react linear 1s;
+  animation-delay:1ms;
+}
+
+.redux{
+  animation: redux linear 1s;
+  animation-delay:1ms;
+
+}
+
+.sql{
+  animation: sql linear 1s;
+  animation-delay: 1ms;
+
+}
+
+.git{
+  animation: git linear 1s;
+  animation-delay:1ms;
+
+}
+
+
+@keyframes html-css {
+  from {width: 0;}
+  to {width: $htmlCss;}
+}
+
+@keyframes js {
+  from {width: 0;}
+  to {width: $JavaScript;}
+}
+
+@keyframes react {
+  from {width: 0;}
+  to {width: $React;}
+}
+
+@keyframes redux {
+  from {width: 0;}
+  to {width: $Redux;}
+}
+
+@keyframes sql {
+  from {width: 0;}
+  to {width: $SQL;}
+}
+
+@keyframes git {
+  from {width: 0;}
+  to {width: $GIT;}
+}
+
+.cources-box{
+  display: grid;
+  > h2{
+    margin-bottom: 20px;
+  }
+}
+.img-box img{
+  width: 100%;
+}
+@media (max-width: 425px) {
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    font-size: 0.9em;
+  }
+}
