@@ -5,42 +5,48 @@ $Redux: 60%;
 $SQL: 50%;
 $GIT: 10%;
 
-.wrapper{
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1em;
 }
 
-.wrapper > div{
+
+.wrapper > div {
   border: 3px solid #ffffff;
   padding: 10px;
 
 }
-.wrapper h2{
+
+.wrapper h2 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 10px;
 }
-.skils-box{
 
-  ul{
+.skils-box {
+
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    li{
+
+    li {
       padding: 5px;
       position: relative;
       background-color: #242323;
       border: 1px solid #242323;
       border-radius: 0 10px 10px 0;
       margin: 0.5em 0;
-      p{
+
+      p {
         font-size: 0.9em;
         display: inline-block;
         padding: 3px;
         text-shadow: #242323 0 0 2px;
       }
-      .value{
+
+      .value {
         margin: 0;
         position: absolute;
         right: 19px;
@@ -48,7 +54,8 @@ $GIT: 10%;
         font-size: 0.9em;
 
       }
-      .row{
+
+      .row {
         position: absolute;
         z-index: 0;
         height: 100%;
@@ -58,91 +65,119 @@ $GIT: 10%;
         border-radius: 0 10px 10px 0;
         transition: width 1s linear 0s;
       }
-      .tool{
+
+      .tool {
         position: relative;
         z-index: 2;
-    }
+      }
     }
   }
 }
 
-.html-css{
+.html-css {
   animation: html-css linear 1s;
-  animation-delay:1ms;
+  animation-delay: 1ms;
 
 }
 
-.js{
+.js {
   animation: js linear 1s;
-  animation-delay:1ms;
+  animation-delay: 1ms;
 
 }
 
-.react{
+.react {
   animation: react linear 1s;
-  animation-delay:1ms;
+  animation-delay: 1ms;
 }
 
-.redux{
+.redux {
   animation: redux linear 1s;
-  animation-delay:1ms;
+  animation-delay: 1ms;
 
 }
 
-.sql{
+.sql {
   animation: sql linear 1s;
   animation-delay: 1ms;
 
 }
 
-.git{
+.git {
   animation: git linear 1s;
-  animation-delay:1ms;
+  animation-delay: 1ms;
 
 }
 
 
 @keyframes html-css {
-  from {width: 0;}
-  to {width: $htmlCss;}
+  from {
+    width: 0;
+  }
+  to {
+    width: $htmlCss;
+  }
 }
 
 @keyframes js {
-  from {width: 0;}
-  to {width: $JavaScript;}
+  from {
+    width: 0;
+  }
+  to {
+    width: $JavaScript;
+  }
 }
 
 @keyframes react {
-  from {width: 0;}
-  to {width: $React;}
+  from {
+    width: 0;
+  }
+  to {
+    width: $React;
+  }
 }
 
 @keyframes redux {
-  from {width: 0;}
-  to {width: $Redux;}
+  from {
+    width: 0;
+  }
+  to {
+    width: $Redux;
+  }
 }
 
 @keyframes sql {
-  from {width: 0;}
-  to {width: $SQL;}
+  from {
+    width: 0;
+  }
+  to {
+    width: $SQL;
+  }
 }
 
 @keyframes git {
-  from {width: 0;}
-  to {width: $GIT;}
+  from {
+    width: 0;
+  }
+  to {
+    width: $GIT;
+  }
 }
 
-.cources-box{
+.cources-box {
   display: grid;
-  > h2{
+
+  > h2 {
     margin-bottom: 20px;
   }
 }
-.img-box img{
+
+.img-box img {
   width: 100%;
 }
+
 @media (max-width: 425px) {
-  .wrapper{
+  .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;

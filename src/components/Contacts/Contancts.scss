@@ -1,27 +1,29 @@
-
+.contacts{
+  p{
+    margin: 0;
+  }
+  a{
+    font-weight: 300;
+  }
+}
 .top-long {
   border: 3px solid #fff;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  .contact-row {
-    display: flex;
-
-    a {
-      flex-basis: 100%;
-      padding: 5%;
-      text-align: right;
-    }
-  }
 }
 
+
 .contact-row{
+  display: flex;
   a {
     font-size: 1.7rem;
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    text-align: center;
+    flex-basis: 100%;
+    padding: 5%;
+    text-align: right;
   }
   a:hover {
     transition: 0.5s linear;

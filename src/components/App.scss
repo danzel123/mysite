@@ -1,6 +1,12 @@
 $butHover: rgb(21, 101, 192);
 .container{
   padding: 20px;
+  a{
+    font-weight: 300;
+  }
+  p{
+    font-weight: 300;
+  }
 }
 canvas {
   position: absolute;
@@ -76,7 +82,7 @@ canvas {
 .mobile-menu-box{
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .main-nav {
     margin-bottom: 50px;
   }
@@ -122,15 +128,24 @@ canvas {
   /* контейнер меню */
   .mobile-menu {
     z-index: 50;
-    display: block;
+    height: 100%;
+    display: flex;
     position: fixed;
     visibility: hidden;
     top: 0;
     left: -100%;
     flex-direction: column;
-    height: 100%;
     width: 100%;
     background-color: #242323;
+  }
+
+  .main-nav ul li {
+    display: flex;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
   #menu-toggle:checked ~ .menu-btn > span {
     transform: rotate(45deg);

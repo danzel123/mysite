@@ -7,8 +7,8 @@ class MainPage extends Component {
   componentDidMount() {
     const script = document.createElement("script");
     script.async = true;
-    script.innerHTML = "c = document.getElementById(\"c\")\n" +
-        "var w = c.width = window.innerWidth,\n" +
+    script.innerHTML = "c = document.getElementById(\"c\"),\n" +
+        " w = c.width = window.innerWidth,\n" +
         "    h = c.height = window.innerHeight,\n" +
         "    ctx = c.getContext( '2d' ),\n" +
         "\n" +
@@ -43,6 +43,7 @@ class MainPage extends Component {
         "        vy: 0,\n" +
         "        width: initialWidth\n" +
         "    };\n" +
+        "console.log(speed)\n" +
         "\n" +
         "function init() {\n" +
         "\n" +
@@ -116,8 +117,8 @@ class MainPage extends Component {
         "    } while (\n" +
         "        ( this.vx === -parent.vx && this.vy === -parent.vy ) || ( this.vx === parent.vx && this.vy === parent.vy) );\n" +
         "\n" +
-        "    this.vx *= speed + 1;\n" +
-        "    this.vy *= speed + 2;\n" +
+        "    this.vx *= speed + 2;\n" +
+        "    this.vy *= speed + 3;\n" +
         "\n" +
         "    this.dist = ( Math.random() * ( maxDist - minDist ) + minDist );\n" +
         "\n" +

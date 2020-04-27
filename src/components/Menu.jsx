@@ -21,9 +21,7 @@ class Menu extends React.Component {
         '  }\n' +
         '});'
     document.getElementById('header').appendChild(script);
-
   }
-
   render() {
     return (
         <Router>

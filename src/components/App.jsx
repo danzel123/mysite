@@ -3,9 +3,7 @@ import "./App.scss"
 import Menu from "./Menu";
 
 class App extends Component {
-
-
-  render() {
+ render() {
     return (
         <div className="container">
           <Menu/>

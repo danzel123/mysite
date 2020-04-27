@@ -1,20 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 
-class MainPage extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return(
-            <div>
-                <h2 style={{'fontSize': '2rem', 'textAlign': 'center'}}>В разработке:)</h2>
-            </div>
-        )
-    }
-
+function MainPage() {
+    return (
+        <div>
+            <h2 style={{'fontSize': '2rem', 'textAlign': 'center'}}>В разработке:)</h2>
+        </div>
+    )
 }
 
 export default MainPage
