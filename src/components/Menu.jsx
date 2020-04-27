@@ -28,7 +28,7 @@ class Menu extends React.Component {
           <header id='header'>
             <nav className='main-nav'>
               <ul className='full-menu'>
-                <li><Link exact="true" to="/">Главная</Link></li>
+                <li><Link exact="true" to="/siteProd/">Главная</Link></li>
                 <li><Link to="/portfolio">Навыки</Link></li>
                 <li><Link to="/blog">Блог</Link></li>
                 <li><Link to="/about">Обо мне</Link></li>
@@ -40,7 +40,7 @@ class Menu extends React.Component {
                   <span></span>
                 </label>
                 <ul className='mobile-menu'>
-                  <li className='mob-link'><Link exact="true" to="/">Главная</Link></li>
+                  <li className='mob-link'><Link exact="true" to="/siteProd/">Главная</Link></li>
                   <li className='mob-link'><Link to="/portfolio">Навыки</Link></li>
                   <li className='mob-link'><Link to="/blog">Блог</Link></li>
                   <li className='mob-link'><Link to="/about">Обо мне</Link></li>
@@ -51,7 +51,7 @@ class Menu extends React.Component {
 
           </header>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/siteProd/">
               <MainPage/>
             </Route>
             <Route path="/portfolio">
